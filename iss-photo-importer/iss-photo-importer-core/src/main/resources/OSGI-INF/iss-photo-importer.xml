@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<component name="com.iss.importer">
+    <extension target="org.nuxeo.ecm.platform.filemanager.service.FileManagerService" point="plugins">
+        <plugin name="IssFileImporter" class="com.iss.importer.PhotoImporter" order="0">
+            <filter>.*</filter>
+        </plugin>
+    </extension>
+</component>
