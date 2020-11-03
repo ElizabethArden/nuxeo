@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.iss.revlon</groupId>
+    <artifactId>iss-revlon-parent</artifactId>
+    <version>2.5.0</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>iss-revlon-marketplace-parent</artifactId>
+  <packaging>pom</packaging>
+  <name>ISS Revlon Marketplace Parent</name>
+
+  <modules>
+    <module>marketplace</module>
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.iss.revlon</groupId>
+        <artifactId>iss-revlon-marketplace</artifactId>
+        <version>${project.version}</version>
+        <type>zip</type>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+</project>

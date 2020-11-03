@@ -1,0 +1,5 @@
+{
+    "eventId": {
+        "type": "keyword"
+    }
+}

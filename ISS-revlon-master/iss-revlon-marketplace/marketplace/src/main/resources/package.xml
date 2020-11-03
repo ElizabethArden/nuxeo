@@ -1,0 +1,41 @@
+<!-- See documentation at http://doc.nuxeo.com/x/HgIz -->
+<package type="addon" name="iss-revlon-marketplace"
+  version="@VERSION@">
+  <title>ISS Revlon Marketplace</title>
+  <description>
+    <p>Nuxeo Marketplace for ISS Revlon.</p>
+  </description>
+  <home-page>https://github.com/nuxeo-projects/iss-revlon</home-page>
+  <vendor></vendor>
+  <installer restart="true" />
+  <uninstaller restart="true" />
+  <!-- <hotreload-support>false</hotreload-support> -->
+  <!-- <require-terms-and-conditions-acceptance>false</require-terms-and-conditions-acceptance> -->
+  <!-- Nuxeo Validation: none | inprocess | primary_validation | nuxeo_certified -->
+  <nuxeo-validation>primary_validation</nuxeo-validation>
+  <!-- Production State: production_ready | testing | proto -->
+  <production-state>production_ready</production-state>
+  <supported>false</supported>
+  <platforms>
+    <platform>server-@DISTRIB_VERSION@</platform>
+    <platform>server-@DISTRIB_VERSION@-HF*</platform>
+  </platforms>
+  <!-- Dependencies on other packages -->
+  <dependencies>
+    <package>nuxeo-web-ui:2.4.0</package>
+    <package>nuxeo-dam:6.4.3</package>
+    <package>easyshare:1.5.3</package>
+    <package>nuxeo-jsf-ui:10.10.0</package>
+    <package>saml2-authentication:1.4.3</package>
+    <!-- <package>nuxeo-vision:1.3.4</package> -->
+    <package>adobe-connector-package:1.0.3</package>
+    <package>nuxeo-spreadsheet:1.4.3</package>
+    <package>nuxeo-drive:1.8.5</package>
+    <package>iss-csv-importer:1.2.2</package>
+    <package>iss-photo-importer:1.0.0-SNAPSHOT</package>
+  </dependencies>
+  <license>Apache License, Version 2.0</license>
+  <license-url>http://www.apache.org/licenses/LICENSE-2.0</license-url>
+  <!-- Visibility: PRIVATE | MARKETPLACE | DEV | PUBLIC -->
+  <visibility>PRIVATE</visibility>
+</package>
