@@ -55,7 +55,7 @@ public class PhotoImporter extends AbstractFileImporter {
         photoDoc.setPropertyValue("phi:aspectRadio",parentDoc.getPropertyValue("pa:aspectRatio"));
         photoDoc.setPropertyValue("phi:shotAngle",parentDoc.getPropertyValue("pa:shotAngle"));
 
-        photoDoc.setPropertyValue("ai:subAssetTP",((String[])parentDoc.getPropertyValue("pa:imageTypes"))[0]);
+        photoDoc.setPropertyValue("ai:subAssetTP",parentDoc.getPropertyValue("pa:imageTypes"));
         photoDoc.setPropertyValue("ai:background",parentDoc.getPropertyValue("pa:background"));
         photoDoc.setPropertyValue("ai:upcCodeText",parentDoc.getPropertyValue("pa:upcCode"));
 
@@ -94,7 +94,6 @@ public class PhotoImporter extends AbstractFileImporter {
         photoDoc.setPropertyValue("cur:stockImageExpiration.stockImageUsageExpirationDateEnd",parentDoc.getPropertyValue("cur:stockImageExpiration.stockImageUsageExpirationDateEnd"));
         photoDoc.setPropertyValue("cur:stockImageExpiration.noStockImageUsageExpirationDate",parentDoc.getPropertyValue("cur:stockImageExpiration.noStockImageUsageExpirationDate"));*/
 
-parentDoc.getProperty("ds").isD
         return photoDoc;
     }
 }
