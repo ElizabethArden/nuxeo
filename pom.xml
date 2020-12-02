@@ -8,7 +8,7 @@
 
   <groupId>org.iss.revlon</groupId>
   <artifactId>iss-revlon-parent</artifactId>
-  <version>2.5.3</version>
+  <version>2.5.4</version>
   <name>ISS Revlon Parent</name>
   <description>ISS Revlon</description>
   <packaging>pom</packaging>
@@ -28,7 +28,7 @@
       <dependency>
         <groupId>nuxeo-studio</groupId>
         <artifactId>revlon-dam</artifactId>
-        <version>revlon-2-5-3-deploy-SNAPSHOT</version>
+        <version>revlon-2-5-4-SNAPSHOT</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
