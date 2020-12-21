@@ -28,7 +28,7 @@
       <dependency>
         <groupId>nuxeo-studio</groupId>
         <artifactId>revlon-dam</artifactId>
-        <version>revlon-2-5-5-deploy-SNAPSHOT</version>
+        <version>revlon-2-5-5-SNAPSHOT</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
